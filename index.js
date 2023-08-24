@@ -1,8 +1,11 @@
-document.getElementById('count-el').innerText = 5
+// .innerText = 5
+
+let countEl = document.getElementById('count-el');
 
 let count = 0
 
 function increment() {
     count = count + 1;
-    console.log(count)
+    countEl.innerText = count;
+    console.log(countEl.innerText)
 }
